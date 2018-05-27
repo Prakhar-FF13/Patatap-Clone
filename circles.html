@@ -3,15 +3,16 @@
 <head>
 	<title>Circles</title>
 	<script type="text/javascript" src="paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css">
 	<script type="text/paperscript" canvas="myCanvas">
 		var path = new Path();
-		path.strokeColor = 'black';
+		path.strokeColor = 'red';
 		var start = new Point(100, 100);
 		path.moveTo(start);
-		path.lineTo(start + [ 100, -50 ]);
+		path.lineTo(start + [ 500, -50 ]);
 		var myCircle = new Path.Circle(new Point(100, 70), 50);
 		myCircle.fillColor = 'black';
-		var myCircle2 = new Path.Circle(new Point(0,100), 300);
+		var myCircle2 = new Path.Circle(new Point(0, 100), 300);
 		myCircle2.fillColor = 'purple';
 </script>
 </head>
